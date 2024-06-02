@@ -1,0 +1,15 @@
+<!-- templates/input.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Page</title>
+</head>
+<body>
+    <form action="{% url 'members_app:input_view' %}" method="post">
+        {% csrf_token %}
+        <label for="user_input">Enter your input:</label><br>
+        <input type="text" id="user_input" name="user_input"><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

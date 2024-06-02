@@ -1,0 +1,15 @@
+<!-- templates/session.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Session Page</title>
+</head>
+<body>
+    <h1>All User Inputs</h1>
+    <ul>
+        {% for input in user_inputs %}
+            <li>{{ input }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
